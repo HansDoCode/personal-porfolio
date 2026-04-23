@@ -1,20 +1,201 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Full-Stack Developer - Building scalable web applications" />
     <link href="./output.css" rel="stylesheet" />
-    <title>Profile</title>
+    <title>Full-Stack Developer Portfolio</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
-  <body class="bg-gray-400 min-h-screen flex items-center justify-center">
-    <div class="bg-white rounded-2xl shadow-md p-6 w-80">
-      <img src="profile-picture.jpg" alt="picture" class="rounded-full size-20 mx-auto object-cover">
-      <h2 class="text-center text-xl font-bold text-gray-800 mt-4">Hans Baguna</h2>
-      <p class="text-center text-sm text-gray-400 ">Front-end Developer</p>
-      <div class="flex gap-3 mt-6">
-        <button class="flex-1 bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600 cursor-pointer">Follow</button>
-        <button class="flex-1 border border-blue-500 text-blue-500 py-2 rounded-lg hover:bg-blue-50 cursor-pointer">Message</button>
+  <body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white shadow-sm z-50">
+      <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold text-gray-900">Hans Baguna</h1>
+        <div class="flex gap-6">
+          <a href="#about" class="text-gray-600 hover:text-gray-900 transition">About</a>
+          <a href="#projects" class="text-gray-600 hover:text-gray-900 transition">Projects</a>
+          <a href="#contact" class="text-gray-600 hover:text-gray-900 transition">Contact</a>
+        </div>
       </div>
-    </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 px-6 bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen flex flex-col justify-center">
+      <div class="max-w-4xl mx-auto w-full">
+        <img src="profile-picture.jpg" alt="Hans Baguna" class="rounded-full size-32 mx-auto object-cover mb-8 shadow-lg">
+        <h2 class="text-5xl font-bold text-center text-gray-900 mb-4">Full-Stack Developer</h2>
+        <p class="text-xl text-center text-gray-600 mb-8">Building scalable, user-focused web applications. Let's bring your ideas to life.</p>
+        <div class="flex gap-4 justify-center">
+          <a href="#projects" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition font-medium">View My Work</a>
+          <a href="#contact" class="border border-blue-600 text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-50 transition font-medium">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-6 bg-white">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-3xl font-bold text-gray-900 mb-8">About Me</h3>
+        <p class="text-gray-600 text-lg mb-6">I'm a full-stack developer with 5+ years of experience building web applications. I specialize in React, Node.js, and cloud technologies, with a passion for clean code and user experience.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h4 class="font-bold text-gray-900 mb-2">Frontend</h4>
+            <p class="text-sm text-gray-600">React, TypeScript, Tailwind CSS, Vue.js</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h4 class="font-bold text-gray-900 mb-2">Backend</h4>
+            <p class="text-sm text-gray-600">Node.js, Express, PostgreSQL, MongoDB</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h4 class="font-bold text-gray-900 mb-2">Tools</h4>
+            <p class="text-sm text-gray-600">Git, Docker, AWS, GitHub Actions</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-6 bg-gray-50">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-3xl font-bold text-gray-900 mb-12">Featured Projects</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Project 1 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+            <div class="h-48 bg-gradient-to-br from-blue-500 to-blue-600"></div>
+            <div class="p-6">
+              <h4 class="text-xl font-bold text-gray-900 mb-2">E-Commerce Platform</h4>
+              <p class="text-gray-600 text-sm mb-4">Full-stack marketplace with payment integration, real-time inventory, and admin dashboard.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-blue-100 text-blue-700 text-xs px-3 py-1 rounded-full">React</span>
+                <span class="bg-blue-100 text-blue-700 text-xs px-3 py-1 rounded-full">Node.js</span>
+                <span class="bg-blue-100 text-blue-700 text-xs px-3 py-1 rounded-full">PostgreSQL</span>
+              </div>
+              <a href="#" class="text-blue-600 hover:text-blue-700 font-medium text-sm">View Project →</a>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+            <div class="h-48 bg-gradient-to-br from-green-500 to-green-600"></div>
+            <div class="p-6">
+              <h4 class="text-xl font-bold text-gray-900 mb-2">Task Management App</h4>
+              <p class="text-gray-600 text-sm mb-4">Collaborative task management tool with real-time updates and team collaboration features.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-green-100 text-green-700 text-xs px-3 py-1 rounded-full">Vue.js</span>
+                <span class="bg-green-100 text-green-700 text-xs px-3 py-1 rounded-full">Firebase</span>
+                <span class="bg-green-100 text-green-700 text-xs px-3 py-1 rounded-full">Tailwind</span>
+              </div>
+              <a href="#" class="text-blue-600 hover:text-blue-700 font-medium text-sm">View Project →</a>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+            <div class="h-48 bg-gradient-to-br from-purple-500 to-purple-600"></div>
+            <div class="p-6">
+              <h4 class="text-xl font-bold text-gray-900 mb-2">Analytics Dashboard</h4>
+              <p class="text-gray-600 text-sm mb-4">Data visualization platform with real-time metrics, custom reports, and data export capabilities.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-purple-100 text-purple-700 text-xs px-3 py-1 rounded-full">React</span>
+                <span class="bg-purple-100 text-purple-700 text-xs px-3 py-1 rounded-full">D3.js</span>
+                <span class="bg-purple-100 text-purple-700 text-xs px-3 py-1 rounded-full">MongoDB</span>
+              </div>
+              <a href="#" class="text-blue-600 hover:text-blue-700 font-medium text-sm">View Project →</a>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+            <div class="h-48 bg-gradient-to-br from-orange-500 to-orange-600"></div>
+            <div class="p-6">
+              <h4 class="text-xl font-bold text-gray-900 mb-2">Social Media API</h4>
+              <p class="text-gray-600 text-sm mb-4">RESTful API for social networking with user authentication, feed management, and real-time notifications.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-orange-100 text-orange-700 text-xs px-3 py-1 rounded-full">Node.js</span>
+                <span class="bg-orange-100 text-orange-700 text-xs px-3 py-1 rounded-full">Express</span>
+                <span class="bg-orange-100 text-orange-700 text-xs px-3 py-1 rounded-full">Redis</span>
+              </div>
+              <a href="#" class="text-blue-600 hover:text-blue-700 font-medium text-sm">View Project →</a>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+            <div class="h-48 bg-gradient-to-br from-pink-500 to-pink-600"></div>
+            <div class="p-6">
+              <h4 class="text-xl font-bold text-gray-900 mb-2">Blog Platform</h4>
+              <p class="text-gray-600 text-sm mb-4">Content management system with rich text editor, SEO optimization, and multi-author support.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-pink-100 text-pink-700 text-xs px-3 py-1 rounded-full">Next.js</span>
+                <span class="bg-pink-100 text-pink-700 text-xs px-3 py-1 rounded-full">Prisma</span>
+                <span class="bg-pink-100 text-pink-700 text-xs px-3 py-1 rounded-full">PostgreSQL</span>
+              </div>
+              <a href="#" class="text-blue-600 hover:text-blue-700 font-medium text-sm">View Project →</a>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+            <div class="h-48 bg-gradient-to-br from-indigo-500 to-indigo-600"></div>
+            <div class="p-6">
+              <h4 class="text-xl font-bold text-gray-900 mb-2">Mobile App Companion</h4>
+              <p class="text-gray-600 text-sm mb-4">React Native mobile app with offline support, push notifications, and cloud synchronization.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-indigo-100 text-indigo-700 text-xs px-3 py-1 rounded-full">React Native</span>
+                <span class="bg-indigo-100 text-indigo-700 text-xs px-3 py-1 rounded-full">Firebase</span>
+                <span class="bg-indigo-100 text-indigo-700 text-xs px-3 py-1 rounded-full">Expo</span>
+              </div>
+              <a href="#" class="text-blue-600 hover:text-blue-700 font-medium text-sm">View Project →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 bg-white">
+      <div class="max-w-2xl mx-auto">
+        <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center">Let's Work Together</h3>
+        <p class="text-gray-600 text-center mb-12">Have a project in mind? I'd love to hear about it. Fill out the form below and I'll get back to you within 24 hours.</p>
+        
+        <form action="https://formspree.io/f/xlgaajkj" method="POST" class="space-y-6">
+          <div>
+            <label for="name" class="block text-gray-900 font-medium mb-2">Your Name</label>
+            <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 transition">
+          </div>
+          
+          <div>
+            <label for="email" class="block text-gray-900 font-medium mb-2">Email Address</label>
+            <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 transition">
+          </div>
+          
+          <div>
+            <label for="message" class="block text-gray-900 font-medium mb-2">Project Details</label>
+            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 transition resize-none"></textarea>
+          </div>
+          
+          <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition font-medium">Send Inquiry</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 px-6">
+      <div class="max-w-4xl mx-auto">
+        <div class="flex justify-center gap-6 mb-8">
+          <a href="https://github.com/HansDoCode" target="_blank" rel="noopener" class="hover:text-white transition">GitHub</a>
+          <a href="https://www.linkedin.com/in/hans-baguna-715675405/" target="_blank" rel="noopener" class="hover:text-white transition">LinkedIn</a>
+          <a href="https://www.facebook.com/Hans.Dev.io" target="_blank" rel="noopener" class="hover:text-white transition">Facebook</a>
+        </div>
+        <p class="text-center text-sm">&copy; 2026 Hans Baguna. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
